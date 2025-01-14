@@ -1,0 +1,298 @@
+Basic:
+
+----------------------------------------------------------------------------------------------------------------------------------------
+    If you want to make a comment:
+
+                                    // This is a comment
+
+                                    /*
+                                    
+                                        This
+                                        is    
+                                        a  
+                                        comment
+                                        to
+
+                                        But multi-line
+                                    
+                                    */
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+    Writing your first code:
+
+        To write your code you should learn some things about the cpp language:
+
+        std::cout means = standard character output
+
+        << = it means output
+
+        std::endl means = standard end line
+
+        at the same time, we can use just ['\n'] to explain thats the end of a line, it's better for performance btw;
+
+        - Variables:
+
+        >   int -> Integer (whole number): can be used for age, year or days.
+            If you put a decimal number, like 7.5, the system will not understand it like a decimal number, turning it in a simple 7.
+
+            For situations like this, we have double.
+
+        >   double -> (numbers including decimal): can be used for price or temperature.
+
+            For one single character situations we use the char variable.
+
+        >   char -> Character (only one character).
+
+            If we try put more than one character in a char variable, the system will return a error.
+
+        >   boolean (true or false): Everything that can have two states.
+
+            Example: The object coffe can have a variable that shows if it's hot or not. So coffe can be:
+            Hot > true
+            or
+            Hot > false
+
+        >   String (objects that represents a sequence of text)
+
+            It's simple to write:
+            std::string umastring = "isso é uma string";
+
+            You can include numbers in a string, but they are treated differently.
+
+                                        --------------------------------------------
+
+    What is a Const?
+    
+        >   Const keyword specifies that a variable's value is constant
+            tells the compiler to prevent anything from modify it (read-only)
+
+                                        --------------------------------------------
+
+    Namespaces
+
+        >   Namespaces provides a solution for preventing name conflicts in large projects. Each entity needs a unique name.
+            A namespace allows for identically named entities as long as the namespaces are different.
+
+            If you don't specify what namespace you want to show, the system will chose the local namespace;
+
+            Ex: If you have a namespace out of the main and one of them it's inside the main, then the system will chose the main one.
+
+            To call the correct namespace you will need to use a prefix.
+
+            Ex: std::cout << first::x;
+
+            The "first" in the code is the prefix that shows who are you calling.
+
+            But it's nice to know that, if you write inside the main "using namespace first" for example, you don't need to specify who among the x's variable
+            are you calling.
+
+            Namespaces are useful too for time saving. 
+            You can use "std" as a namespace in your code to save time.
+
+            -------------------------------
+        Ex: |#include <iostream>          |
+            |                             |
+            |int main(){                  |
+            |                             |
+            |   using namespace std;      |
+            |                             |
+            |   string name = "User";     |
+            |                             |
+            |   cout << "Hello " << name; |
+            |                             |
+            |   return 0;                 |
+            |}                            |
+            -------------------------------
+            
+            And then the system will do everything as it always does.
+            Of course we can use it like this, but the most safe way is calling each std like:
+
+            -------------------------------
+        Ex: |#include <iostream>          |
+            |                             |
+            |int main(){                  |
+            |                             |
+            |   using std::string;        |
+            |   using std::cout;          |
+            |                             |
+            |   string name = "User";     |
+            |                             |
+            |   cout << "Hello " << name; |
+            |                             |
+            |   return 0;                 |
+            |}                            |
+            -------------------------------
+
+                                        --------------------------------------------
+
+    Dicionário:
+
+        Alias = Apelido;
+        Radius = Raio;
+
+                                        --------------------------------------------
+
+    Typedef and Type Aliases:
+
+        >   Typedef is an reserved keyword used to create an additional name (alias) for another data type.
+            New identifier for an existing type kinda like a nickname.
+            Its used 'cause it helps with readability and reduces typos.
+
+            we put "_t" after de alias to indicate it is a typedef.
+
+            Use it when theres a clear benefit.
+            Replaced with 'using' (work better w/ templates).
+
+                                        --------------------------------------------
+
+    Arithmeric operations 
+    
+        >   Return the result of a specific arithmetic operation (+ - * /)
+
+            We have a bigger and a shorter way to do it.
+
+            Setting a variable...
+
+                int variable = 20;
+
+            ..then do the operation:
+
+                variable = variable - 2;
+
+            or we can do the same but in a faster way
+
+                variable-=2;
+
+            thats the exactly same operation.
+
+                in addition and subtraction we can do the operation in one more way that just works with 1 number (+ or -)...
+
+                variable--;
+
+                or 
+
+                variable++; -> in case you want to add 1 number.
+
+                To do multiplication and division operations only the firts two ways are right.
+
+
+            Operators:
+
+            Operator    Name                Description                                 Example     
+                +   |   Addition        |   Adds together two values                |   x + y
+                -   |   Subtraction     |   Subtracts one value from another        |   x - y
+                *   |   Multiplication  |   Multiplies two values                   |   x * y
+                /   |   Diviosion       |   Divides one value by another            |   x / y
+                %   |   Modulus         |   Returns the division remainder          |   x % y 
+                ++  |   Increment       |   Increases the value of a variable by 1  |   x++
+                --  |   Decrement       |   Decreases the value of a variable by 1  |   x--
+
+                                        --------------------------------------------
+
+    Type Conversion:
+
+        >   Conversion a value of one data type to another 
+            Implicit = automatic
+            Explicit = Precede a value with new data type (int)
+
+            Ex: 
+
+            int correct = 8;
+            int questions = 10;
+            double score = correct/ (double)questions * 100;
+
+                                        --------------------------------------------
+
+    User Input:
+
+        >   cout << (insertion operation);
+
+        >   cin << (extraction operation);
+            In cin we can have problems with spaces so we can use a function to arrange it:
+
+            std::getline(std::cin, variableName);
+
+            with you have problems with white spaces or errors when doind another inputs above you can write this function like this:
+            std::getline(std::cin >> std::ws, variableName);
+
+                                        --------------------------------------------
+
+    Math related functions:
+
+        >   https://cplusplus.com/reference/cmath/
+
+                                        --------------------------------------------
+
+    Statements: 
+
+        >   If statemants: do something if a condition is true. (if or else if)
+                                        if not, then don't do it. (else)
+
+        > Switch: alternative to using many "else if" statements.
+                                        compare one value matching cases.
+
+                                        --------------------------------------------
+
+    TernaryOperator:
+
+        >   Replacement to an if/else statement -> ?:
+
+            Ex:
+
+                condition ? expression1 : expression2 
+                            true          false
+
+                                        --------------------------------------------
+
+    Logical Operators:
+
+        >   &&(and) = check if two conditions are true.
+            ||(or) = check if at least one of two conditions is true. -> only one of the condition has to be true;
+            !(not) = reverses the logical state of its operand.
+
+
+
+    String useful methods:
+
+        > Length: the Length :/
+
+            .length() <biggest, minor> number
+
+            Ex: 
+                if(name.length() > 12){
+                    std::cout << "Your name can't be over 12 characters.";
+                }
+                else{
+                    std::cout << "Welcome " << name;
+                }
+
+        > Empty: checks if variable is empty or not.
+
+            .empty()
+
+            Ex:
+
+                if(name.empty()){
+                    std::cout << "Please, write your name here";
+                }
+                else{
+                    std::cout << "Welcome " << name;
+                }
+
+        > Append: we can append one string to another string
+
+                YourString.append(@gmail.com);
+
+                std::cout << YourString;
+
+                Terminal -> "YourString@gmail.com"
+
+        > At: we can return a character at a given position in a string.
+                
+                std::string YourString; (consider that the value is the same as the string name)
+                std::cout << YourString.at(0);
+
+                Terminal -> "Y"
+        
+        >   https://cplusplus.com/reference/string/string/
