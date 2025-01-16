@@ -296,3 +296,11 @@ Basic:
                 Terminal -> "Y"
         
         >   https://cplusplus.com/reference/string/string/
+
+    While:
+
+        > Works like a loop until a condition is met.
+
+    Do While:
+
+        > Do some block of code firts, THEN repeat again if condition is true;
