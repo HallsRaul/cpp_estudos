@@ -3,7 +3,7 @@
 // cout << (insertion operator)
 // cin >> (extraction operator)
 
-int main() 
+int main()
 {
    std::string name;
    int age;

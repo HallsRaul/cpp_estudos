@@ -7,8 +7,8 @@ int main(){
     /*
     
         This
-        is    
-        a  
+        is
+        a
         comment
         to
     
