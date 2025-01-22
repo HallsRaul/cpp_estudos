@@ -8,8 +8,8 @@ Basic:
                                     /*
                                     
                                         This
-                                        is    
-                                        a  
+                                        is
+                                        a
                                         comment
                                         to
 
@@ -224,7 +224,7 @@ Basic:
 
                                         --------------------------------------------
 
-    Statements: 
+    Statements:
 
         >   If statemants: do something if a condition is true. (if or else if)
                                         if not, then don't do it. (else)
@@ -240,7 +240,7 @@ Basic:
 
             Ex:
 
-                condition ? expression1 : expression2 
+                condition ? expression1 : expression2
                             true          false
 
                                         --------------------------------------------
@@ -252,14 +252,13 @@ Basic:
             !(not) = reverses the logical state of its operand.
 
 
-
     String useful methods:
 
         > Length: the Length :/
 
             .length() <biggest, minor> number
 
-            Ex: 
+            Ex:
                 if(name.length() > 12){
                     std::cout << "Your name can't be over 12 characters.";
                 }
@@ -304,3 +303,21 @@ Basic:
     Do While:
 
         > Do some block of code firts, THEN repeat again if condition is true;
+
+    Nested for:
+
+        > A loop inside a loop;
+
+---------------------------------------------------------------------------------------------------------------------------
+
+        ////////////////////////////////////////////
+            break; -> breaks out of a loop.
+
+            continue; -> skips current interaction.
+        ////////////////////////////////////////////
+
+                                        --------------------------------------------
+
+    Pseudo-random:
+
+        > Not truly random(but close);
