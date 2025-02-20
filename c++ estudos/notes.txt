@@ -21,7 +21,7 @@ Basic:
 
     Writing your first code:
 
-        To write your code you should learn some things about the cpp language:
+        To write your code you should learn some things about cpp language:
 
         std::cout means = standard character output
 
@@ -183,7 +183,7 @@ Basic:
                 +   |   Addition        |   Adds together two values                |   x + y
                 -   |   Subtraction     |   Subtracts one value from another        |   x - y
                 *   |   Multiplication  |   Multiplies two values                   |   x * y
-                /   |   Diviosion       |   Divides one value by another            |   x / y
+                /   |   Division        |   Divides one value by another            |   x / y
                 %   |   Modulus         |   Returns the division remainder          |   x % y 
                 ++  |   Increment       |   Increases the value of a variable by 1  |   x++
                 --  |   Decrement       |   Decreases the value of a variable by 1  |   x--
@@ -213,7 +213,7 @@ Basic:
 
             std::getline(std::cin, variableName);
 
-            with you have problems with white spaces or errors when doind another inputs above you can write this function like this:
+            if you have problems with white spaces or errors when doing another inputs above you can write this function like this:
             std::getline(std::cin >> std::ws, variableName);
 
                                         --------------------------------------------
@@ -321,3 +321,8 @@ Basic:
     Pseudo-random:
 
         > Not truly random(but close);
+
+---------------------------------------------------------------------------------------------------------------------------
+
+    Function:
+        > Is a block of a reusable code
