@@ -326,3 +326,13 @@ Basic:
 
     Function:
         > Is a block of a reusable code
+
+
+        overloaded(functions)
+        {
+        in cpp language a function can share the same name but need a different set of parameters.
+        A function with the same name but other parameter set is known as a function signature.
+        }
+
+        Vector is a alternative to replace arrays in a code. The benefits for using it is that in 
+        vectors you can modify size and include and removing new items.
