@@ -336,3 +336,12 @@ Basic:
 
         Vector is a alternative to replace arrays in a code. The benefits for using it is that in 
         vectors you can modify size and include and removing new items.
+
+---------------------------------------------------------------------------------------------------------------------------
+
+    Varible Scope:
+
+    > Local variables: declared inside a function or block of curly braces -> {}; If this variable was declared inside in one of these then she will be hidden for all program at least
+    it wasn't called.
+
+    > Global variables: declared outside of all functions;
