@@ -345,3 +345,28 @@ Basic:
     it wasn't called.
 
     > Global variables: declared outside of all functions;
+
+---------------------------------------------------------------------------------------------------------------------------
+
+    Arrays:
+
+    > A array is a data structure that can hold multiple values
+        values are accessed by an index number
+            "kind of like a variable that holds multiple values"
+
+            you can create a array, declare his size nad put items inside him later.
+
+            example:
+
+            std::string eyes[] -> declaration
+            ---------------------------------
+            std::string eyes[2] -> size
+            ---------------------------------
+            std::string eyes[2]
+            eyes[0] = "one eye";
+            eyes[1] = "two eyes";
+
+    Size Of:
+    
+    > Determines the size in bytes of a variable, data type, class, objects, etc.
+        You can use it to calculate how mutch char/items in a array too
