@@ -370,3 +370,7 @@ Basic:
     
     > Determines the size in bytes of a variable, data type, class, objects, etc.
         You can use it to calculate how mutch char/items in a array too
+
+    ForEach loop:
+
+    A loop that eases the traversal over an iterable data set.
