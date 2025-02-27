@@ -26,4 +26,11 @@ divide pelos terços
 
     for(std::string food : foods){
         std::cout << food << "\n";
+
+
+        if you want to fill the array with user input, you can use the std::fill function with an iterator like
+        std::getline(std::cin, foods, '\n');
+
+        and then use a for loop with a i variable to iterate over the array and print the values.abort
+
     }*/
