@@ -1,4 +1,5 @@
 #include <iostream>
+#include <locale>
 
 //declarações de funções
 void Quarto(bool &arrumado);
@@ -7,6 +8,7 @@ void verificarArrumado(int &cama, int &armario, int &mesa, int &cadeira, bool &a
 
 int main()
 {
+    // Configura o console para usar a codificação UTF-8
     std::setlocale(LC_ALL, "pt_BR.UTF-8");
     bool arrumado = false;
     int cama, armario, mesa, cadeira;
