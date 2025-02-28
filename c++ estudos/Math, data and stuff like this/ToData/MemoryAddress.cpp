@@ -54,5 +54,6 @@ void swap(std::string &x, std::string &y) // So we can change the values of the 
     y = temp;
 }
 
-// So why use this? We use reference and pointers as a way to manipulate the memory addresses of variables and functions to make the code more efficient and to make the code more readable. So when you manipulate de address of a variable means that
-// you will not need to make a copy of the variable to manipulate it, you will manipulate the original variable. That's why we use pointers and references, to make better memory manipulation and efficiency in the code. 
+/*  So why use this? We use reference and pointers as a way to manipulate the memory addresses of variables and functions to make the code more efficient and to make the code more readable. So when you manipulate de address of a variable means that
+    you will not need to make a copy of the variable to manipulate it, you will manipulate the original variable. That's why we use pointers and references, to make better memory manipulation and efficiency in the code. 
+*/
