@@ -1,14 +1,15 @@
 #include <iostream>
 
 //declarações de funções
-void Quarto(bool arrumado);
+void Quarto(bool &arrumado);
 void itensQuarto(int &cama, int &armario, int &mesa, int &cadeira, bool &arrumado);
-void verificarArrumado(int cama, int armario, int mesa, int cadeira, bool &arrumado);
+void verificarArrumado(int &cama, int &armario, int &mesa, int &cadeira, bool &arrumado);
 
 int main()
 {
+    std::setlocale(LC_ALL, "pt_BR.UTF-8");
     bool arrumado = false;
-    int cama = 0, armario = 0, mesa = 0, cadeira = 0;
+    int cama, armario, mesa, cadeira;
 
     std::cout << "Olá!,\n ainda está cedo...\n  mas já é hora de arrumar o quarto!\n             >:3\n\n";
 
@@ -19,13 +20,13 @@ int main()
             std::cout << "Quarto desarrumado! Vamos arrumá-lo já!\n";
         }
     } while (!arrumado);
-
+ 
     Quarto(arrumado);
 
     return 0;
 }
 
-void Quarto(bool arrumado)
+void Quarto(bool &arrumado)
 {
     if (arrumado) {
         std::cout << "\n\n                   Quarto arrumado!\n                    Parabéns! \(0w0)/ \n";
@@ -35,7 +36,7 @@ void Quarto(bool arrumado)
     }
 }
 
-void verificarArrumado(int cama, int armario, int mesa, int cadeira, bool &arrumado) {
+void verificarArrumado(int &cama, int &armario, int &mesa, int &cadeira, bool &arrumado) {
     if (cama == 1 && armario == 1 && mesa == 1 && cadeira == 1) {
         arrumado = true;
     } else {
